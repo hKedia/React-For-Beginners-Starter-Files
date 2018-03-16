@@ -23,32 +23,28 @@
           transform: translateX(120%);
   padding: 0;
 }
-.count-enter {
-  background: #f00;
+.counter-enter {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
-.count-enter.count-enter-active {
-  background: #ff0;
+.counter-enter.count-enter-active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 .count-exit {
-  background: #000;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 .count-exit.count-exit-active {
-  background: #008000;
-  -webkit-transform: translateY(-100%) scale(3);
-          transform: translateY(-100%) scale(3);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 @font-face {
   font-family: "haymakerregular";
